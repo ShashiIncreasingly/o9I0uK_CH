@@ -1,0 +1,295 @@
+.inc_pdp_block {
+  background: #f3f3f3;
+  position: relative;
+  padding: 40px 0 70px;
+  margin: 50px 0px 40px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+
+  @media screen and (max-width: 1280px) {
+    margin: 0px -15px 40px;
+  }
+
+  @media screen and (max-width: 1025px) {
+    padding: 40px 15px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    padding: 20px 0 30px;
+    margin: 20px 0px 10px;
+    background: #f6f6f6;
+  }
+
+  .inc_pdp_title_text {
+    font-weight: 600;
+    font-size: 32px;
+    color: #000000;
+    text-align: left;
+    padding: 20px 0;
+    font-family: 'Sharp Grotesk';
+    margin: 0px auto 20px;
+    max-width: 1340px;
+    margin: 0 auto 20px;
+
+    @media screen and (max-width: 1340px) {
+      max-width: 1250px;
+    }
+
+    @media screen and (max-width: 1290px) {
+      max-width: 980px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      max-width: 950px;
+    }
+
+    @media screen and (max-width: 990px) {
+      max-width: 680px;
+    }
+
+    @media screen and (max-width: 800px) {
+      font-size: 22px;
+      padding: 0px 10px 10px;
+      margin-bottom: 10px;
+      max-width: 100%;
+    }
+  }
+  .inc_pdp_promo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    .inc_pdp_promo_text {
+      display: inline-block;
+      border: 1px dashed #000000;
+      padding: 4px 18px;
+      background: #ffffff;
+      font-family: Sharp Grotesk;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 22px;
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .inc_pdp_bundle_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1360px;
+    margin: 25px auto 0;
+
+    @media screen and (max-width: 992px) {
+      flex-wrap: wrap;
+      max-width: 100%;
+    }
+
+    @media screen and (max-width: 800px) {
+      display: block;
+      position: relative;
+      padding: 0;
+      background: #fff;
+    }
+
+    .inc_product_showcase_block {
+      @media screen and (max-width: 800px) {
+        &:first-child {
+          .inc_product_block {
+            .inc_product_info_main_block {
+              .inc_product_desc_block {
+                padding-top: 26px;
+                position: relative;
+                &:after {
+                  content: 'This item';
+                  position: absolute;
+                  top: 0;
+                  left: 9px;
+                  width: 100%;
+                  height: 20px;
+                  display: block;
+                  font-size: 14px;
+                  font-weight: 400;
+                  font-family: 'Sharp Grotesk';
+                }
+              }
+            }
+          }
+        }
+      }
+      .inc_bundle_main_title_text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        color: #000;
+        font-family: Sharp Grotesk;
+        padding: 0 0 10px 10px;
+        display: block;
+        @media screen and (max-width: 800px) {
+          display: none;
+        }
+      }
+    }
+    .inc_pdp_icon-add_block {
+      position: relative;
+      flex-basis: 2%;
+
+      @media screen and (max-width: 1340px) {
+        flex-basis: auto;
+      }
+
+      @media screen and (max-width: 1290px) {
+        flex-basis: 2%;
+      }
+
+      @media screen and (max-width: 1000px) {
+        flex-basis: auto;
+      }
+
+      @media screen and (max-width: 800px) {
+        border-bottom: 1px solid #cacaca;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+    }
+
+    .inc_pdp_icon-add_img_block {
+      height: 45px;
+      width: 45px;
+      border-radius: 40px;
+      background: #fff url(https://usaincreasingly.increasingly.co/Clients/opi-vite/sprite.svg) -3px -425px/50px
+        no-repeat;
+      position: absolute;
+      top: -130px;
+      left: 30px;
+      border: 1px solid #cacaca;
+
+      @media screen and (max-width: 1340px) {
+        left: -3px;
+      }
+
+      @media screen and (max-width: 1290px) {
+        left: 11px;
+      }
+
+      @media screen and (max-width: 1000px) {
+        left: -3px;
+      }
+
+      @media only screen and (max-width: 800px) {
+        top: -22px;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+    }
+
+    .inc_pdp_bundle_nav_right,
+    .inc_pdp_bundle_nav_left {
+      background: #fff url(https://usaincreasingly.increasingly.co/Clients/opi-vite/sprite.svg) 2px -64px/40px
+        no-repeat;
+      height: 45px;
+      width: 45px;
+      border: 1px solid #ccc;
+      position: absolute;
+      top: 68%;
+      right: -60px;
+      cursor: pointer;
+      z-index: 2;
+      border-radius: 45px;
+      transform: rotate(180deg);
+
+      @media screen and (max-width: 1340px) {
+        right: -45px;
+      }
+
+      &.inc_disabled {
+        opacity: 0.5;
+      }
+    }
+
+    .inc_pdp_bundle_nav_left {
+      left: -60px;
+      right: auto;
+      transform: rotate(0deg);
+
+      @media screen and (max-width: 1340px) {
+        left: -43px;
+      }
+    }
+
+    .inc_pdp_bundle_product_block {
+      position: relative;
+      max-width: 600px;
+      min-width: 300px;
+      margin: auto 70px;
+
+      @media screen and (max-width: 1340px) {
+        margin: auto 40px;
+      }
+
+      @media screen and (max-width: 1290px) {
+        margin: auto 50px;
+        max-width: 300px;
+      }
+
+      @media only screen and (max-width: 800px) {
+        max-width: 100%;
+        min-width: 100%;
+        width: 100%;
+        margin: 0;
+      }
+      .inc_bundle_title_text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        color: #000;
+        font-family: Sharp Grotesk;
+        padding: 0 0 10px 10px;
+        display: block;
+        @media screen and (max-width: 800px) {
+          display: none;
+        }
+      }
+      .inc_product_showcase_block {
+        &:first-child {
+          .inc_product_block {
+            .inc_product_info_main_block {
+              .inc_product_desc_block {
+                @media screen and (max-width: 800px) {
+                  padding-top: 0;
+                  &:after {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .inc_bundle_main_title_text {
+          display: none;
+        }
+      }
+    }
+  }
+}
+html.inc_ch{ //for inc_ch
+  @media screen and (max-width: 800px) {
+    .inc_pdp_block.incActive{
+      .inc_product_block{
+
+        .inc_product_desc_block{
+          position: relative;
+          .inc_error.inc_show {
+            text-align: left;
+            left: 10px;
+            transform: none;
+            position: relative;
+            bottom: 0;
+            padding-top: 6px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,133 @@
+.inc_af_block {
+  position: relative;
+  margin: 20px 0px;
+
+  @media screen and (max-width: 1280px) {
+    margin: 0 0px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    margin: 20px 0px 40px;
+  }
+
+  .inc_af_title_text_block {
+    font-weight: 400;
+    font-size: 2rem;
+    color: #363636;
+    padding: 10px 0;
+    font-family: "Sharp Grotesk";
+    line-height: 38px;
+    letter-spacing: 0.02rem;
+    margin-bottom: 1.5rem;
+
+    @media screen and (max-width: 800px) {
+      font-size: 22px;
+      padding: 0 0 10px;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .inc_af_bundle_product_block {
+    position: relative;
+    padding-bottom: 30px;
+    max-width: 90rem;
+    margin: 0 auto;
+
+    @media screen and (max-width: 800px) {
+      display: flex;
+      overflow: auto;
+      padding-bottom: 5px;
+      margin: 0px -5px;
+      max-width: 100%;
+    }
+  }
+
+  .swiper {
+    @media screen and (max-width: 992px) {
+      overflow: auto;
+      padding-bottom: 5px;
+    }
+  }
+
+  .inc_af_bundle_nav_right,
+  .inc_af_bundle_nav_left {
+    background: url(https://usaincreasingly.increasingly.co/Clients/opi-vite/sprite.svg) 5px -53px/35px no-repeat #fff;
+    height: 45px;
+    width: 45px;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 40%;
+    right: 20px;
+    cursor: pointer;
+    z-index: 2;
+    transform: rotate(180deg);
+    border-radius: 40px;
+
+    &.inc_disabled {
+      opacity: 0.5;
+    }
+
+    @media screen and (max-width: 1280px) {
+      top: 30%;
+    }
+
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+
+  .inc_af_bundle_nav_left {
+    left: 20px;
+    right: auto;
+    transform: rotate(0deg);
+  }
+
+  .inc_product_block {
+    padding: 0px 5px;
+    width: 100%;
+    margin: 0;
+
+    @media screen and (max-width: 800px) {
+      width: 170px;
+      margin: 0;
+    }
+
+    .inc_product_info_main_block {
+      display: block;
+
+      @media screen and (max-width: 800px) {
+        padding: 0;
+      }
+
+      .inc_product_desc_block {
+        @media screen and (max-width: 800px) {
+          width: 100%;
+          flex-basis: 100%;
+          padding: 10px;
+        }
+      }
+
+      .inc_product_img_block {
+        @media screen and (max-width: 800px) {
+          width: 100%;
+          flex-basis: 100%;
+
+        }
+      }
+
+      .inc_product_img_block .inc_product_img_main_block .inc_product_img_main_img {
+        height: auto;
+        aspect-ratio: 353.75/436;
+
+        @media screen and (max-width: 800px) {
+          width: 100%;
+          aspect-ratio: 158/197;
+        }
+
+        img {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

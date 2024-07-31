@@ -1,0 +1,158 @@
+.inc_pdp_simple_cart_block {
+  flex-basis: 20%;
+  height: 100%;
+  padding: 10px 5px 10px 15px;
+  font-family: Sharp Grotesk, sans-serif;
+  margin-left: 60px;
+
+  @media screen and (max-width: 992px) {
+    background: #fff;
+    flex-basis: 80vw;
+    min-width: 80vw;
+    padding: 20px 15px;
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  @media screen and (max-width: 800px) {
+    flex-basis: 100%;
+    min-width: 100%;
+    border-top: 1px solid #eeeeee;
+    margin-top: 0px;
+    padding: 20px 15px 15px 15px;
+  }
+
+  .inc_pdp_bundle_cart_price_heading {
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  .inc_pdp_bundle_cart_button {
+    background: #363636;
+    width: 100%;
+    min-height: 48px;
+    cursor: pointer;
+    position: relative;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: 0.2s;
+    box-sizing: border-box;
+    border: none;
+    font-family: Sharp Grotesk;
+
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      left: 0;
+      right: 0px;
+      top: 10px;
+      margin: auto;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      border-top-color: transparent;
+      opacity: 0;
+      -webkit-animation: spin 1s linear infinite;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    &.inc_loading {
+      cursor: unset;
+      color: transparent;
+
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+
+  .inc_pdp_bundle_cart_price_block {
+    margin-top: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 992px) {
+      margin: 12px auto;
+      justify-content: center;
+    }
+
+    @media screen and (max-width: 800px) {
+      margin: 0;
+    }
+  }
+
+  .inc_pdp_bundle_cart_price {
+    @media screen and (max-width: 800px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .inc_pdp_simple_cart_item_text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #101010;
+    margin-bottom: 8px;
+
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  .inc_pdp_bundle_cart_active {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #363636;
+  }
+
+  .inc_pdp_bundle_cart_saved {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #781221;
+    white-space: nowrap;
+    margin-left: 5px;
+  }
+
+  .inc_pdp_arrow_block {
+    display: none;
+
+    @media screen and (max-width: 800px) {
+      width: 30px;
+      height: 30px;
+
+      background: transparent url(https://usaincreasingly.increasingly.co/Clients/opi-vite/sprite.svg) -22px -436px/73px no-repeat;
+      margin-left: 20px;
+      transform: rotate(90deg);
+      display: block;
+    }
+  }
+}

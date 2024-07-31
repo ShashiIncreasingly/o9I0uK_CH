@@ -1,0 +1,15 @@
+/* File: font.css
+@font-face {
+  font-family: 'Sharp Grotesk';
+  src: local('Sharp Grotesk'), url('./fonts/SharpGroteskLight20.woff') format('woff'),
+    url('./fonts/SharpGroteskBook20.woff') format('woff2');
+}
+
+body {
+  margin: 0;
+  font-family: 'Sharp Grotesk';
+} 
+ 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+} */

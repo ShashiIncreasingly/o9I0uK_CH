@@ -1,0 +1,135 @@
+.inc_recs_block {
+  background: #f3f3f3;
+  position: relative;
+  padding: 40px 0 70px;
+  margin: 40px -40px 30px;
+
+  @media screen and (max-width: 1280px) {
+    margin: 10px -15px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    padding: 40px 0px;
+  }
+
+  .inc_af_title_text_block {
+    font-weight: 400;
+    font-size: 32px;
+    color: #363636;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Proxima Nova';
+    margin: 0px auto 20px;
+
+    @media screen and (max-width: 800px) {
+      font-size: 22px;
+      padding: 0 0 10px;
+    }
+  }
+
+  .inc_recs_bundles_block {
+  }
+
+  .inc_af_bundle_product_block {
+    position: relative;
+    padding-bottom: 30px;
+    max-width: 1208px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1290px) {
+      max-width: 900px;
+    }
+  }
+
+  .swiper {
+    @media screen and (max-width: 992px) {
+      overflow: auto;
+      padding-bottom: 5px;
+    }
+  }
+
+  .inc_af_bundle_nav_right,
+  .inc_af_bundle_nav_left {
+    background: url(https://usaincreasingly.increasingly.co/Clients/opi-vite/sprite.svg) 8px -241px/35px
+      no-repeat #fff;
+    height: 48px;
+    width: 48px;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 40%;
+    right: -10px;
+    cursor: pointer;
+    z-index: 2;
+
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+
+    &.inc_disabled {
+      opacity: 0.5;
+    }
+  }
+
+  .inc_af_bundle_nav_left {
+    left: -10px;
+    right: auto;
+    transform: rotate(180deg);
+  }
+
+  .inc_af_bundle_product_block {
+    @media screen and (max-width: 800px) {
+      display: flex;
+      overflow: auto;
+      padding-bottom: 5px;
+    }
+
+    .inc_product_desc_block {
+      text-align: left;
+    }
+
+    .inc_product_desc_ratings_block {
+      justify-content: flex-start;
+    }
+
+    .inc_product_block
+      .inc_product_info_main_block
+      .inc_product_desc_block
+      .inc_product_desc_price_block {
+      justify-content: flex-start;
+    }
+
+    .inc_product_block
+      .inc_product_info_main_block
+      .inc_product_img_block
+      .inc_product_img_main_block
+      .inc_product_img_main_img {
+      height: 310px;
+    }
+  }
+
+  .inc_product_block {
+    @media screen and (max-width: 800px) {
+      width: 280px;
+      margin: 0px 10px;
+    }
+
+    .inc_product_info_main_block {
+      @media screen and (max-width: 800px) {
+        display: block;
+
+        .inc_product_desc_block {
+          padding: 0px;
+        }
+
+        .inc_product_img_block .inc_product_img_main_block .inc_product_img_main_img {
+          width: 250px;
+          height: auto;
+
+          img {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}

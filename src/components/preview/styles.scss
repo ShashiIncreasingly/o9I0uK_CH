@@ -1,0 +1,74 @@
+.inc_bundle_avail_block {
+  margin-top: 5px;
+  max-width: 400px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  @media screen and (max-width: 1023px) {
+    margin: 10px auto;
+  }
+  .img_wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+  }
+
+  .inc_bundle_avail_img {
+    img {
+      height: 96px;
+      object-fit: contain;
+      margin: 0 auto;
+      @media screen and (max-width: 1100px) {
+        padding: 0 5px;
+      }
+
+      @media screen and (max-width: 800px) {
+        height: auto;
+        width: 68px;
+        padding: 0;
+      }
+    }
+  }
+
+  .inc_bundle_plus {
+    height: 25px;
+    width: 25px;
+    background: #fff url(https://usaincreasingly.increasingly.co/Clients/opi-vite/sprite.svg) -8px -337px/39px
+      no-repeat;
+    @media screen and (max-width: 1100px) {
+      transform: scale(0.8);
+      background: #fff url(https://usaincreasingly.increasingly.co/Clients/opi-vite/sprite.svg) -12px -337px/39px
+        no-repeat;
+    }
+    @media screen and (max-width: 800px) {
+      margin: 0 5px;
+      transform: none;
+      background: #fff url(https://usaincreasingly.increasingly.co/Clients/opi-vite/sprite.svg) -8px -337px/39px
+        no-repeat;
+    }
+  }
+
+  .inc_bundle_avail_btn {
+    border: 1px solid #000000;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    border-radius: 80px;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 17px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: opacity 0.3s, color 0.3s, background-color 0.3s, border-color 0.3s, transform 0.3s;
+    color: #000000;
+    margin-bottom: 20px;
+    @media screen and (max-width: 800px) {
+      width: 236px;
+      margin: 20px auto;
+      height: 40px;
+      font-weight: 400;
+    }
+  }
+}

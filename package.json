@@ -1,0 +1,50 @@
+{
+  "name": "opi-vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "analyze": "vite-bundle-visualizer"
+  },
+  "dependencies": {
+    "html-react-parser": "^3.0.4",
+    "lodash": "^4.17.21",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-debounce-input": "^3.3.0",
+    "react-dom": "^18.2.0",
+    "react-id-generator": "^3.0.2",
+    "react-intersection-observer": "^9.5.2",
+    "react-modal": "^3.16.1",
+    "react-responsive": "^9.0.0",
+    "react-simple-star-rating": "^5.1.6",
+    "react-swipeable": "^7.0.0",
+    "swiper": "^8.4.4",
+    "uuid": "^9.0.0",
+    "uuidv4": "^6.2.13",
+    "vite-bundle-visualizer": "^0.10.0",
+    "vite-tsconfig-paths": "^4.0.7",
+    "zustand": "^4.1.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "@typescript-eslint/eslint-plugin": "^5.46.0",
+    "@typescript-eslint/parser": "^5.46.0",
+    "@vitejs/plugin-react": "^2.2.0",
+    "babel-loader": "^8.3.0",
+    "eslint": "^8.29.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "sass": "^1.56.1",
+    "typescript": "^4.9.4",
+    "vite": "^3.2.3"
+  }
+}
